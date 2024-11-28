@@ -9,18 +9,18 @@
 #SBATCH --account=SSCM033324
 #SBATCH --output ./slurm_logs/snakemake_%j.out
 
-# 1. 设置环境
+# 1. set up environment
 cd "${SLURM_SUBMIT_DIR}"
 echo "Activating Conda environment..."
 source ~/initConda.sh
 conda activate ahds_sa
 
-# 2. 创建必要目录
+# 2. set up logs
 mkdir -p slurm_logs
 
-# 3. 运行 Snakemake
+# 3. run Snakemake
 echo "Starting Snakemake workflow..."
 snakemake --cores 1 --use-conda --latency-wait 60
 
-# 4. 完成
+# 4. fin
 echo "Snakemake pipeline finished!"
