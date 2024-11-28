@@ -13,7 +13,7 @@
 cd "${SLURM_SUBMIT_DIR}"
 echo "Activating Conda environment..."
 source ~/initConda.sh
-conda activate ahds_sa
+mamba activate ahds_sa
 
 # 2. set up logs
 mkdir -p slurm_logs
