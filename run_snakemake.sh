@@ -4,7 +4,7 @@
 #SBATCH --partition=teach_cpu
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=0:10:00
+#SBATCH --time=3:00:00
 #SBATCH --mem=300m
 #SBATCH --account=SSCM033324
 #SBATCH --output ./slurm_logs/snakemake_%j.out
