@@ -1,0 +1,13 @@
+name: ahds_sa
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - r-base=4.4.1
+  - r-tidyverse=2.0.0
+  - r-janitor=2.2.0
+  - r-tidytext=0.4.2  
+  - r-wordcloud=2.6
+  - snakemake=8.24.1
+prefix: /opt/miniconda3/envs/ahds_formative
