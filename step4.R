@@ -35,4 +35,4 @@ ggplot(word_year_counts, aes(x = Year, y = n, color = word, group = word)) +
         legend.position = "bottom")
 
 # save results
-ggsave("clean/top_10_words_frequency_over_time.png", width = 12, height = 8)
+ggsave("clean/top_12_words_frequency_over_time.png", width = 12, height = 8)
