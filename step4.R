@@ -25,7 +25,7 @@ ggplot(word_year_counts, aes(x = Year, y = n, color = word, group = word)) +
   geom_line() +
   geom_point() +
   facet_wrap(~ word, scales = "free_y") +
-  labs(title = "Top 10 Most Common Words Frequency Over Time",
+  labs(title = "Top 12 Most Common Words Frequency Over Time",
        x = "Year",
        y = "Frequency",
        color = "Word") +
