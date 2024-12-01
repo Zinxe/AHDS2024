@@ -12,7 +12,10 @@
 # 1. set up environment
 cd "${SLURM_SUBMIT_DIR}"
 echo "Activating Conda environment..."
+source ~/installConda.sh
 source ~/initConda.sh
+
+mamba env create -f ahds_sa_environment.yml
 mamba activate ahds_sa
 
 # 2. set up logs
